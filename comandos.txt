@@ -1,0 +1,13 @@
+npm install @nestjs/typeorm typeorm mysql2
+yarn add @nestjs/typeorm typeorm mysql2
+
+
+TypeOrmModule.forRoot({
+type: 'mysql',
+host: 'localhost',
+port: 3306,
+username: 'USUARIO',
+password: 'CONTRASEÑA',
+database: 'NOMBRE_DB',
+entities: []
+})
