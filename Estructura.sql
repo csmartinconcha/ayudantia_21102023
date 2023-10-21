@@ -28,4 +28,4 @@ ALTER TABLE `Permisos` ADD FOREIGN KEY (`nombreUsuario`) REFERENCES `Usuarios` (
 
 ALTER TABLE `Permisos` ADD FOREIGN KEY (`idRepositorio`) REFERENCES `Repositorios` (`id`);
 
-ALTER TABLE `Proyectos` ADD FOREIGN KEY (`id`) REFERENCES `Repositorios` (`idProyecto`);
+ALTER TABLE `Repositorios` ADD FOREIGN KEY (`idProyecto`) REFERENCES `Proyectos` (`id`);
